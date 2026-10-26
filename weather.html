@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Weather Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🇮🇳 Indian Weather App</h1>
+        <p>Check weather across India</p>
+
+        <form id="weatherForm">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter Indian city name"
+                value="Gurugram"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message"></p>
+
+        <div id="weather" class="weather-box" hidden>
+            <h2 id="cityName"></h2>
+            <div id="weatherIcon">🌤️</div>
+            <h1 id="temperature"></h1>
+            <p id="description"></p>
+
+            <div class="details">
+                <p>💧 Humidity: <span id="humidity"></span></p>
+                <p>💨 Wind: <span id="wind"></span></p>
+                <p>🌡️ Feels like: <span id="feelsLike"></span></p>
+            </div>
+
+            <p id="updated"></p>
+        </div>
+    </div>
+</body>
+</html>
